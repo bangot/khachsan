@@ -9,9 +9,9 @@ public class Test {
 
         KhachSan ql=new KhachSan();
         ql.nhapDanhsach(sc);
-        System.out.println("nhap khach tra phong");
+        System.out.println("nhap so cmnd khach tra phong");
         int cmnd=sc.nextInt();
-        System.out.println("tong ien la"+ql.tinhtien(cmnd));
+        System.out.println("tong so ten la"+ql.tinhtien(cmnd));
 
 
     }

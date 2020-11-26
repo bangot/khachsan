@@ -4,13 +4,13 @@ import java.util.Scanner;
 
 public class Khachtro extends Nguoi {
     private int soNgaytro;
-    private int loaiPhong;
+    private String loaiPhong;
     private double giaPhong;
     public Khachtro(){
 
     }
 
-    public Khachtro(String hoTen, int tuoi, int soCMND, int soNgaytro, int loaiPhong, Double giaPhong) {
+    public Khachtro(String hoTen, int tuoi, int soCMND, int soNgaytro, String loaiPhong, Double giaPhong) {
        this.hoTen=hoTen;
        this.tuoi=tuoi;
        this.soCMND=soCMND;
@@ -24,9 +24,9 @@ public class Khachtro extends Nguoi {
         soNgaytro=sc.nextInt();
         sc.nextLine();
         System.out.println("\tNhap loai phong");
-        loaiPhong=sc.nextInt();
+        loaiPhong=sc.nextLine();
         System.out.println("\tNhap gia phong");
-        giaPhong=sc.nextDouble();sc.nextLine();
+        giaPhong=sc.nextDouble();
     }
     public void hienThithongtin(){
         super.hienThiThongTinKhachTro();
@@ -35,6 +35,7 @@ public class Khachtro extends Nguoi {
         System.out.println("nhap gia phong " + giaPhong);
     }
     public int getSoNgaytro(){
+
         return soNgaytro;
     }
 
