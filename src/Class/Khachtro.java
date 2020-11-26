@@ -27,6 +27,10 @@ public class Khachtro extends Nguoi {
         loaiPhong=sc.nextLine();
         System.out.println("\tNhap gia phong");
         giaPhong=sc.nextDouble();
+
+
+
+
     }
     public void hienThithongtin(){
         super.hienThiThongTinKhachTro();
